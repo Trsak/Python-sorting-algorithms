@@ -1,7 +1,7 @@
 def quick_sort(numbers_list):
     list_length = len(numbers_list)
 
-    if list_length <= 0:
+    if list_length <= 1:
         return numbers_list
 
     pivot = numbers_list[0]
