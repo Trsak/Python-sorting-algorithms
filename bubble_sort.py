@@ -1,11 +1,11 @@
-def bubble_sort(list):
-    list_length = len(list)
+def bubble_sort(numbers_list):
+    list_length = len(numbers_list)
     for i in range(list_length - 1):
         for j in range(list_length - i - 1):
-            if list[j] > list[j + 1]:
-                list[j], list[j + 1] = list[j + 1], list[j]
+            if numbers_list[j] > numbers_list[j + 1]:
+                numbers_list[j], numbers_list[j + 1] = numbers_list[j + 1], numbers_list[j]
 
-    return list
+    return numbers_list
 
 
 if __name__ == "__main__":
