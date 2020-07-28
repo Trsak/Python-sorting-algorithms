@@ -1,5 +1,6 @@
 def selection_sort(numbers_list):
     list_length = len(numbers_list)
+
     for i in range(list_length - 1):
         max_index = i
         for j in range(i + 1, list_length):
