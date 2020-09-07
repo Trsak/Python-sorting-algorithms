@@ -5,6 +5,7 @@ from insertion_sort import insertion_sort
 from merge_sort import merge_sort
 from quick_sort import quick_sort
 from selection_sort import selection_sort
+from shell_sort import shell_sort
 
 testing_lists = [
     [
@@ -118,6 +119,10 @@ class TestSortingAlgorithms(unittest.TestCase):
     def test_merge(self):
         for i in range(len(testing_lists)):
             self.assertListEqual(merge_sort(testing_lists[i][0]), testing_lists[i][1])
+
+    def test_shell(self):
+        for i in range(len(testing_lists)):
+            self.assertListEqual(shell_sort(testing_lists[i][0]), testing_lists[i][1])
 
 
 if __name__ == '__main__':
